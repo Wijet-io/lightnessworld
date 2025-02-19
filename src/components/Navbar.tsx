@@ -128,7 +128,7 @@ export default function Navbar() {
                   marginTop: scrolled ? "22px" : "36px"
                 }}
                 transition={{ duration: 0.3, ease: "easeOut" }}
-                className={`relative z-10 min-w-[70px] w-32 top-2 transition-[height] duration-300 ease-out ${
+                className={`relative z-10 min-w-[70px] w-32 transition-[height] duration-300 ease-out ${
                   scrolled ? 'h-[110px]' : 'h-[144px]'
                 }`}
               />
