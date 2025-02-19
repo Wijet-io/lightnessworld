@@ -1,0 +1,117 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 30 25% 97%;
+    --foreground: 20 28% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 20 28% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 28% 15%;
+    --primary: 166 59% 41%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 35 25% 92%;
+    --secondary-foreground: 20 28% 15%;
+    --muted: 35 25% 92%;
+    --muted-foreground: 20 15% 45%;
+    --accent: 28 71% 61%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 30 25% 90%;
+    --input: 30 25% 90%;
+    --ring: 166 59% 41%;
+    --radius: 0.75rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased font-noto overflow-x-hidden;
+  }
+
+  /* Scrollbar Customization */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-secondary/50;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-primary/80 hover:bg-primary transition-colors;
+    border-radius: 3px;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-noto font-bold tracking-tight;
+  }
+
+  .glass-panel {
+    @apply bg-white/90 backdrop-blur-md border border-white/30 shadow-[0_8px_32px_rgba(0,0,0,0.06)];
+  }
+
+  .section-wrapper {
+    @apply flex min-h-screen w-full items-center justify-center px-4 py-20 md:py-32;
+  }
+
+  .section-container {
+    @apply container mx-auto flex flex-col items-center justify-center gap-12 md:gap-16;
+  }
+
+  .feature-card {
+    @apply relative p-8 rounded-2xl bg-white/50 backdrop-blur-sm border border-white/30 
+           shadow-[0_8px_32px_rgba(0,0,0,0.03)] transition-all duration-300 
+           hover:shadow-[0_16px_48px_rgba(0,0,0,0.08)] hover:-translate-y-1;
+  }
+
+  .nav-link {
+    @apply relative text-sm font-medium transition-colors hover:text-primary 
+           after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 
+           after:bg-primary after:transition-all after:duration-300 
+           hover:after:w-full focus:outline-none focus:ring-2 focus:ring-primary/20 
+           focus:ring-offset-2 rounded-sm;
+  }
+}
+
+.font-noto {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+/* Advanced Animations */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Gradient Text */
+.gradient-text {
+  @apply bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent;
+  background-size: 200% 100%;
+  animation: gradient 8s ease infinite;
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
