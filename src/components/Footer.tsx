@@ -50,7 +50,7 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/privacy" className="text-white/80 hover:text-white transition-colors">
+                  <Link to="/privacy-policy" className="text-white/80 hover:text-white transition-colors">
                     {t('footer.legal.privacy')}
                   </Link>
                 </li>
@@ -71,9 +71,9 @@ export default function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a href="#contact" className="text-white/80 hover:text-white transition-colors">
+                  <Link to="/contact-page" className="text-white/80 hover:text-white transition-colors">
                     {t('footer.support.contact')}
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <a href="#" className="text-white/80 hover:text-white transition-colors">

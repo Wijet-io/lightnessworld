@@ -1,4 +1,3 @@
-
 import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
@@ -70,7 +69,7 @@ export default function Terms() {
               </p>
               <p className="text-muted-foreground leading-relaxed mt-4">
                 Pour plus d'informations sur la gestion de vos données personnelles, 
-                veuillez consulter notre <a href="/privacy" className="text-primary hover:underline">Politique de Confidentialité</a>.
+                veuillez consulter notre <a href="/privacy-policy" className="text-primary hover:underline">Politique de Confidentialité</a>.
               </p>
             </section>
           </div>

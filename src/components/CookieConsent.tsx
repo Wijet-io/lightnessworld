@@ -126,7 +126,7 @@ export default function CookieConsent() {
                 <div className="text-sm text-gray-500 mb-4">
                   <p className="text-muted-foreground text-sm">
                     {t('cookies.readMore')}{" "}
-                    <Link to="/privacy" className="text-primary hover:underline">
+                    <Link to="/privacy-policy" className="text-primary hover:underline">
                       {t('cookies.policy')}
                     </Link>
                   </p>
