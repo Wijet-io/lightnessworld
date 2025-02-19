@@ -25,23 +25,21 @@ export default function PrivacyPolicy() {
             <section className="mb-12">
               <h2 className="text-2xl font-semibold mb-4">1. Collecte des données</h2>
               <p className="text-muted-foreground leading-relaxed">
-                Nous collectons les informations que vous nous fournissez directement lorsque vous créez un compte, 
-                utilisez nos services ou communiquez avec nous. Ces informations peuvent inclure votre nom, 
-                adresse email, et autres données nécessaires à l'utilisation de nos services.
+              Votre confidentialité est primordiale pour nous. Cette politique de confidentialité décrit comment nous collectons, utilisons et protégeons vos informations personnelles lorsque vous utilisez notre application, qui inclut les fonctionnalités de testament en ligne, timer de vie, moteur de recherche pour les services funéraires, signalement de décès, et collecte de dons.
               </p>
             </section>
 
             <section className="mb-12">
               <h2 className="text-2xl font-semibold mb-4">2. Utilisation des données</h2>
               <p className="text-muted-foreground leading-relaxed">
-                Nous utilisons vos données personnelles pour :
+              Nous collectons différentes informations pour assurer le bon fonctionnement de l’application, telles que :
               </p>
               <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
-                <li>Fournir et maintenir nos services</li>
-                <li>Vous informer des changements dans nos services</li>
-                <li>Vous permettre de participer aux fonctionnalités interactives</li>
-                <li>Fournir un support client</li>
-                <li>Détecter et prévenir les activités frauduleuses</li>
+                <li>Informations financières : pour la collecte de dons, certaines données bancaires peuvent être demandées pour traiter les contributions. Ces informations sont protégées et ne seront utilisées que pour le traitement des transactions.</li>
+                <li>Informations Personnelles : lors de la création d’un testament, nous collectons des informations personnelles pour désigner un destinataire en cas de décès. Ces informations restent strictement confidentielles et ne seront partagées qu’avec la personne désignée selon vos instructions.</li>
+                <li>Données de géolocalisation : pour le moteur de recherche de services funéraires, nous utilisons votre position géographique afin de vous fournir des résultats pertinents. Ces données ne sont pas conservées après l’utilisation.</li>
+                <li>Commentaires et évaluations : lors de la publication d’avis, nous collectons et publions votre avis et des informations liées (par exemple, preuve de passage) pour offrir des retours fiables à notre communauté.</li>
+                <li>Documents de décès : pour la fonctionnalité de signalement d’un décès, nous demandons un acte de décès afin de vérifier l’information et transmettre le testament et les dettes aux destinataires choisis. Cette information est traitée avec la plus haute confidentialité.</li>
               </ul>
             </section>
 
@@ -86,7 +84,7 @@ export default function PrivacyPolicy() {
               <h2 className="text-2xl font-semibold mb-4">6. Contact</h2>
               <p className="text-muted-foreground leading-relaxed">
                 Pour toute question concernant cette politique de confidentialité ou pour exercer 
-                vos droits, vous pouvez nous contacter à : privacy@lightness.fr
+                vos droits, vous pouvez nous contacter à : contact@lightness.world
               </p>
             </section>
           </div>
